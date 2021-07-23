@@ -1,0 +1,258 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    cursor:default;
+}
+.header{
+    margin-top: 15px;
+    margin-left: 80px;
+}
+#header2{
+    font-size: 13px;
+    margin-left: 40px;
+    color: gray;
+}
+#header2 strong{
+    color: black;
+}
+#hr1{
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+#hr2{
+    margin-top: 3px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+}
+#searchbar
+{
+    width: 45%;
+    height: 25px;
+    border: 1.5px lightgray;
+    border-bottom: 2.5px lightgrey;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: contain;
+}
+#searchbar::placeholder { 
+    color: black;
+    opacity: 1;
+  }
+  
+input#searchbar {
+    background-image: url(/images/search.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: 25px;
+}
+input#searchbar:focus {
+    background-image:none;
+    text-indent:0px
+}
+#profile_picture{
+    float: right;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.tool{
+    color: gray;
+    width: 25px;
+    margin-right: 20px;
+    float: right;
+}
+.bell{
+    color: gray;
+    width: 25px;
+    margin-right: 20px;
+    float: right;
+}
+.container{
+    margin-left: 70px;
+    margin-top: -50px;
+}
+.folders{
+    float: left;
+    border: 1px lightgray;
+    border-style: solid;
+    border-radius: 4%;
+    padding: -15px;
+    margin: 2px;
+    margin-left: 20px;
+    width: 200px;
+    height: 80px;
+    position: relative;
+}
+.folderimg{
+    margin: 12px;
+    float: left;
+}
+.f235{
+    margin-left: 30px; 
+    color: grey;
+}
+.info
+{
+    text-decoration: none;
+    margin-left: 120px;
+    color: gray;
+    font-size: 20px;
+    
+}
+#info
+{
+    text-decoration: none;
+    margin-left: 120px;
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+}
+#info:focus{
+    color: #1E90FF;
+}
+#tabs{
+    border-left: 2px solid lightgray;
+    padding: 5px;
+    width: 300px;
+    height: 450px;
+    float: right;
+    text-decoration: none;
+}
+section{
+    border-left: 0.1px solid lightgray;
+    padding: 5px;
+    width: 300px;
+    height: 450px;
+    float: right;
+    text-decoration: none;
+}
+#detailsection {
+    display: none;
+}
+#folderimage{
+    float: left;
+    margin-top: 12px;
+    width: 20px;
+}
+#Details{
+    font-size: 13px;
+    color: gray;
+    margin-top: -20px;
+}
+.right{
+    float: right;
+    position: absolute;
+    margin-top: -30px;
+    right: 0%;
+    display: flex;
+    padding-right: 15px;
+    color: black;
+}
+#Comments{
+    display: none;
+    padding: 0px;
+    margin: 0px;
+}
+#Comments strong{
+    font-size: 14px;
+    float: right;
+    position: absolute;
+    margin-top: -37px;
+    right: 140px;
+    display: flex;
+    padding-right: 15px;
+}
+#Comments p{
+    font-size: 14px;
+    line-height: 14px;
+}
+.small{
+    color: grey;
+    float: right;
+    position: absolute;
+    margin-top: -18px;
+    right: 160px;
+    display: flex;
+    padding-right: 15px;
+}
+.med{
+    margin-top: 8px;
+    margin-bottom: -10px;
+}
+.avatarimage{
+    float: left;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -20px;
+}
+.commentimage{
+    position: relative;
+    width: 30px;
+    right: 27px;
+    padding-right: 11px;
+    color: gray;
+    border: 2px solid white;
+    border-radius: 25%;
+    background-color: white;
+}
+#hr3{
+    margin-top: 48px;
+    margin-left: -5px;
+    width: auto;
+    border: 3px solid lightgray;
+}
+.vr{
+    border-left: 1px solid lightgray;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+    top: 0;
+}
+#x{
+    float: right; 
+    text-decoration: none; 
+    color: grey;
+    cursor: pointer;
+}
+.heart{
+    margin-left: 10px; 
+    font-size: 20px; 
+    color: gray;
+}
+.threedot{
+    margin-top: -5px;
+}
+#logo{
+    float: left;
+    margin-left: 15px;
+    margin-top: -5px;
+}
+.homeimage{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.home{
+    font-size: 10px;
+    color: gray;
+    display: flex;
+    margin-left: 20px;
+    margin-top: -15px;
+}
+.orgfolders{
+    width: 5%;
+    margin-top: 10px;
+    background-color:#e6f2ff;
+    border-left: 2px solid #1E90FF;
+}
+.orgimage{
+    width:15px;
+    margin-top: 12px;
+    margin-left: 25px;
+}
+.org{
+    font-size: 10px;
+    font-weight:bolder;
+    color: #1E90FF;
+    display: flex;
+    margin-left: 8px;
+    padding-bottom: 12px;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Assessment</title>
+</head>
+<body>
+  <img src="/logo.svg" alt="logo" id="logo">
+  <div class = "header">
+    <input type="text" placeholder= "Search" id="searchbar">
+    <img src="profile_picture.svg" alt="" width="30px" id="profile_picture">
+    <img src="bell.svg" alt="notifications" class="bell">
+    <img src="cog.svg" alt="tools" class="tool">
+    <!-- <span style="color: gray; width: 30px;"> &#x1F514;</span> -->
+  </div>
+  <div class='vr'></div>
+
+  <hr id="hr1">
+  <img src="home.svg" alt="home" class="homeimage">
+
+  <span id = "header2">
+    Org Folders > 
+    <strong>
+      Jan 2021
+    </strong>
+  </span>
+  <hr id="hr2">
+  <span class="home">
+    Home
+  </span>
+
+  <div class="orgfolders">
+    <img src="folder-Selected.svg" alt="orgfolders" class="orgimage">
+    <span class="org">
+      Org Folders
+    </span>
+  </div>
+
+    <!-- navtabs -->
+    <section id="detailsection">
+      <a href="" id="x">x </a>
+      <img src="Folder.svg" alt="" id=folderimage>
+      <h6>Folders 1</h6>
+        <!-- <div class="w3-bar w3-black">
+          <button class="w3-bar-item w3-button" onclick="openCity('Details')">
+            Details
+          </button>
+          <button class="w3-bar-item w3-button" onclick="openCity('Comments')">
+            Comments
+          </button>
+        </div> -->
+        <div>
+          <a href="javascript:void(0)" onclick="openCity(event, 'Details');">
+            <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Details</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openCity(event, 'Comments');">
+            <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Comments</div>
+          </a>
+        </div>
+        <hr id="hr3">
+        <!-- tab content -->
+        <div id="Details" class="w3-container city">
+          <div>
+            <p>
+              Type 
+              <p class="right">Org Folder</p>
+            </p>
+          </div>
+          <div>
+            <p>
+              Location 
+              <p class="right">Org Folder/ Jan 2021</p>
+            </p>
+          </div>
+          <div>
+            <p>
+              Owner
+              <p class="right">Aditya RM</p>
+            </p>
+          </div>
+          <div>
+            <p>
+              Openned at 
+              <p class="right">June 23, 2021</p>
+            </p>
+          </div>
+          <div>
+            <p>
+              Created at 
+              <p class="right">May 26, 2021</p>
+            </p>
+          </div>
+        </div>
+
+        <div id="Comments" class="w3-container city">
+          <div id="up">
+            <img src="avatar.svg" alt="" class="avatarimage">
+            <img src="comment.svg" alt="" class="commentimage">
+            <strong>
+              Eduardo Benz
+            </Strong>
+            <p class="small">
+              3 mins ago
+              <br>
+            </p>
+            <p class="med">
+              Lorem ipsum dolor sit amet, consectetur adipisc ing elit
+            </p>
+            <hr>
+          </div>
+  
+          <div>
+            <img src="avatar.svg" alt="" class="avatarimage">
+            <img src="comment.svg" alt="" class="commentimage">
+            <strong>
+              Eduardo Benz
+            </Strong>
+            <p class="small">
+              3 mins ago
+              <br>
+            </p>
+            <p class="med">
+              Lorem ipsum dolor sit amet, consectetur adipisc ing elit
+            </p> 
+            <hr>
+          </div>
+        </div>
+      </section>
+  
+
+    <div class="container">
+        <div class="folders">
+            <img src="folder.svg" alt="" width="25px" class="folderimg"><p>Folder 1 <span class="f235">(234)</span></p>
+            <span class ="heart">
+              &#x2764;
+            </span>
+            <a href="javascript:void(0)" id="info" onclick="showDetails()">
+              &#x1F6C8;
+            </a>
+            <img src="3_dot.svg" alt="" class="threedot">
+        </div>
+    </div>
+    <div class="container">
+        <div class="folders">
+            <img src="folder.svg" alt="" width="25px" class="folderimg"><p>Folder 2 <span class="f235">(234)</span> </p>
+            <span class ="heart">
+              &#x2764;
+            </span>
+            <a href="javascript:void(0)" class="info">
+              &#x1F6C8;
+            </a>
+            <img src="3_dot.svg" alt="" class="threedot">
+        </div>
+    </div>
+    <div class="container">
+        <div class="folders">
+            <img src="folder.svg" alt="" width="25px" class="folderimg"><p>Folder 3 <span class="f235">(234)</span> </p>
+            <span class ="heart">
+              &#x2764;
+            </span>
+            <a href="javascript:void(0)" class="info">
+              &#x1F6C8;
+            </a>
+            <img src="3_dot.svg" alt="" class="threedot">
+        </div>
+    </div>
+    <div class="container">
+        <div class="folders">
+            <img src="folder.svg" alt="" width="25px" class="folderimg"><p>Folder 4 <span class="f235">(234)</span></p>
+            <span class ="heart">
+              &#x2764;
+            </span>
+            <a href="javascript:void(0)" class="info">
+              &#x1F6C8;
+            </a>
+            <img src="3_dot.svg" alt="" class="threedot">
+        </div>
+    </div>
+
+    <script>
+      function showDetails() {
+        var y = document.getElementById("detailsection");
+        if (y.style.display === "none") {
+          y.style.display = "block";
+        }
+        else {
+          y.style.display = "none";
+        }
+      }
+
+      // function openCity(cityName) {
+      //   var i;
+      //   var x = document.getElementsByClassName("city");
+      //   for (i = 0; i < x.length; i++) {
+      //     x[i].style.display = "none";
+      //   }
+      //   document.getElementById(cityName).style.display = "block";
+      // }
+      function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-border-blue", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-border-blue";
+      }
+    </script>
+
+</body>
+</html>
